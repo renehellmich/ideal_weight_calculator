@@ -7,17 +7,17 @@ function check() {
     for (const radio of statue) {
         if (radio.checked) {
             selectedValue = radio.value;
-            console.log(selectedValue)
+            console.log(selectedValue);
             break;
         }
     }
     switch (selectedValue) {
         case "schmal":
-            output.innerHTML = [(Number(size) - 100) + (Number(age) / 10)0.9 + 0.9]
-            console.log(output.innerHTML = [(Number(size) - 100) + (Number(age) / 10)0.9 + 0.9])
-            break
+            output.innerHTML = [(Number(size) - 100) + (Number(age) / 10) * 0.9 + 0.9];
+            console.log(output.innerHTML = [(Number(size) - 100) + (Number(age) / 10)*0.9 + 0.9]);
+            break;
         case "breit":
-            output.innerHTML = [(Number(size) - 100) + (Number(age) / 10) * 0.9 + 1.1]
-            break
+            output.innerHTML = [(Number(size) - 100) + (Number(age) / 10) * 0.9 + 1.1];
+            break;
     }
 }
