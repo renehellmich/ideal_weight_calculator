@@ -1,0 +1,39 @@
+@use 'variables' as var;
+
+@use 'mixins' as mix;
+
+* {
+    @include mix.globalSetting;
+}
+
+.form {
+
+    @include mix.formSettings(540px, 1rem);
+    padding: 1rem .25rem;
+    background-image: linear-gradient(45deg, var.$color-top 0%, var.$color-bottom 50%);
+
+    @include mix.displaySetting(flex, column, "", center, "");
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+    .div__over {
+        @include mix.displaySetting(flex, column, flex-start, flex-start, "");
+        gap: 1rem;
+        .label__h2 {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .div__inner {
+            @include mix.displaySetting(flex, row, "", center, "");
+            gap: 1rem;
+            .button__submit {
+                background-color: var.$color-submit;
+                color: white;
+                border: none;
+                padding: .5rem;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
