@@ -14,10 +14,10 @@ function check() {
     switch (selectedValue) {
         case "schmal":
             output.innerHTML = [(Number(size) - 100) + (Number(age) / 10) * 0.9 + 0.9];
-            console.log(output.innerHTML = [(Number(size) - 100) + (Number(age) / 10)*0.9 + 0.9]);
+            console.log(output.innerHTML = [(Number(size) - 100) + (Number(age) / 10)*0.9 + 0.9] + " kg");
             break;
         case "breit":
-            output.innerHTML = [(Number(size) - 100) + (Number(age) / 10) * 0.9 + 1.1];
+            output.innerHTML = [(Number(size) - 100) + (Number(age) / 10) * 0.9 + 1.1] + " kg";
             break;
     }
 }
